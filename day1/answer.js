@@ -2275,7 +2275,7 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-// 第一隻精靈的index
+// 攜帶最多卡路里的精靈的index
 let max = 0
 
 for (let i = 0; i < record.length; i++) {
