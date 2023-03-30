@@ -2287,3 +2287,25 @@ for (let i = 0; i < record.length; i++) {
 let answer = record[max];
 
 console.log(answer);
+
+// Day2
+// 前三名攜帶最多卡路里的精靈index
+
+// 冒泡排序
+var emptySpace;
+for (let i = 0; i < record.length; i++) {
+  for (let j = 0; j < record.length-1; j++) {
+      if (record[j] > record[j+1]) {
+          emptySpace = record[j];
+          record[j] = record[j+1];
+          record[j+1] = emptySpace
+      }   
+  }
+}
+console.log(record[record.length-1]);
+
+let first = record[record.length-1]
+let second = record[record.length-2]
+let third = record[record.length-3]
+
+console.log(first + second + third);
